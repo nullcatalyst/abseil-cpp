@@ -5,6 +5,7 @@
 """
 
 ABSL_CLANG_CL_FLAGS = [
+    "/std:c++17",
     "/W3",
     "/DNOMINMAX",
     "/DWIN32_LEAN_AND_MEAN",
@@ -34,6 +35,7 @@ ABSL_CLANG_CL_TEST_FLAGS = [
 ]
 
 ABSL_GCC_FLAGS = [
+    "-std=c++17",
     "-Wall",
     "-Wextra",
     "-Wcast-qual",
@@ -62,6 +64,7 @@ ABSL_GCC_TEST_FLAGS = [
 ]
 
 ABSL_LLVM_FLAGS = [
+    "-std=c++17",
     "-Wall",
     "-Wextra",
     "-Wcast-qual",
@@ -118,6 +121,7 @@ ABSL_LLVM_TEST_FLAGS = [
 ]
 
 ABSL_MSVC_FLAGS = [
+    "/std:c++17",
     "/W3",
     "/DNOMINMAX",
     "/DWIN32_LEAN_AND_MEAN",
